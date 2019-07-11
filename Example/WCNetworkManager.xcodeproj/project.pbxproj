@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BF0EA0D3AE8F931E4E7AC71 /* Pods_WCNetworkManager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C548ED81B815518178B94F6 /* Pods_WCNetworkManager_Example.framework */; };
-		3ABCAFF8F621DE08D9F98FDF /* Pods_WCNetworkManager_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90131445D44E6D71342A9781 /* Pods_WCNetworkManager_Tests.framework */; };
+		5C5DDA0595117605362C8DD1 /* libPods-WCNetworkManager_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FDE42C62B6E915EFC0751E /* libPods-WCNetworkManager_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +22,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7E65D4ED22D70A6E00461967 /* WCNetworkRequestInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E65D4E922D70A6D00461967 /* WCNetworkRequestInterceptor.m */; };
+		7E65D4EE22D70A6E00461967 /* WCNetworkReponseInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E65D4EB22D70A6E00461967 /* WCNetworkReponseInterceptor.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		F345F23393747563ABBCCF9F /* libPods-WCNetworkManager_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5634871B2948D586E367DD08 /* libPods-WCNetworkManager_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,10 @@
 
 /* Begin PBXFileReference section */
 		0E833B6B4AC5101B404BEBAA /* Pods-WCNetworkManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCNetworkManager_Tests.release.xcconfig"; path = "Target Support Files/Pods-WCNetworkManager_Tests/Pods-WCNetworkManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		24A5028AFCE451EFFBF803AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		24A5028AFCE451EFFBF803AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		27FDE42C62B6E915EFC0751E /* libPods-WCNetworkManager_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCNetworkManager_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FDF49373274CC42A9CC16B /* Pods-WCNetworkManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCNetworkManager_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WCNetworkManager_Tests/Pods-WCNetworkManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4C548ED81B815518178B94F6 /* Pods_WCNetworkManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCNetworkManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5634871B2948D586E367DD08 /* libPods-WCNetworkManager_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCNetworkManager_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* WCNetworkManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCNetworkManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +65,14 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		794947F4094CF96EEB451C9B /* Pods-WCNetworkManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCNetworkManager_Example.debug.xcconfig"; path = "Target Support Files/Pods-WCNetworkManager_Example/Pods-WCNetworkManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7E65D4E922D70A6D00461967 /* WCNetworkRequestInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNetworkRequestInterceptor.m; sourceTree = "<group>"; };
+		7E65D4EA22D70A6E00461967 /* WCNetworkRequestInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNetworkRequestInterceptor.h; sourceTree = "<group>"; };
+		7E65D4EB22D70A6E00461967 /* WCNetworkReponseInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNetworkReponseInterceptor.m; sourceTree = "<group>"; };
+		7E65D4EC22D70A6E00461967 /* WCNetworkReponseInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNetworkReponseInterceptor.h; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F80682FF85DEB31802BD95B /* Pods-WCNetworkManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCNetworkManager_Example.release.xcconfig"; path = "Target Support Files/Pods-WCNetworkManager_Example/Pods-WCNetworkManager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		90131445D44E6D71342A9781 /* Pods_WCNetworkManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCNetworkManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1794266CD9094E20D323296 /* WCNetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WCNetworkManager.podspec; path = ../WCNetworkManager.podspec; sourceTree = "<group>"; };
-		F2111B959448446E24F5D22B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A1794266CD9094E20D323296 /* WCNetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WCNetworkManager.podspec; path = ../WCNetworkManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2111B959448446E24F5D22B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +83,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				2BF0EA0D3AE8F931E4E7AC71 /* Pods_WCNetworkManager_Example.framework in Frameworks */,
+				F345F23393747563ABBCCF9F /* libPods-WCNetworkManager_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +94,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				3ABCAFF8F621DE08D9F98FDF /* Pods_WCNetworkManager_Tests.framework in Frameworks */,
+				5C5DDA0595117605362C8DD1 /* libPods-WCNetworkManager_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +129,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				4C548ED81B815518178B94F6 /* Pods_WCNetworkManager_Example.framework */,
-				90131445D44E6D71342A9781 /* Pods_WCNetworkManager_Tests.framework */,
+				5634871B2948D586E367DD08 /* libPods-WCNetworkManager_Example.a */,
+				27FDE42C62B6E915EFC0751E /* libPods-WCNetworkManager_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WBViewController.h */,
 				6003F5A6195388D20070C39A /* WBViewController.m */,
+				7E65D4EC22D70A6E00461967 /* WCNetworkReponseInterceptor.h */,
+				7E65D4EB22D70A6E00461967 /* WCNetworkReponseInterceptor.m */,
+				7E65D4EA22D70A6E00461967 /* WCNetworkRequestInterceptor.h */,
+				7E65D4E922D70A6D00461967 /* WCNetworkRequestInterceptor.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +203,6 @@
 				49FDF49373274CC42A9CC16B /* Pods-WCNetworkManager_Tests.debug.xcconfig */,
 				0E833B6B4AC5101B404BEBAA /* Pods-WCNetworkManager_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +217,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3B195F5F8DA4DC91A4DCC229 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +266,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,24 +304,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B195F5F8DA4DC91A4DCC229 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WCNetworkManager_Example/Pods-WCNetworkManager_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WCNetworkManager/WCNetworkManager.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCNetworkManager.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WCNetworkManager_Example/Pods-WCNetworkManager_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5734204F5B38F997905A3406 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,9 +355,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E65D4ED22D70A6E00461967 /* WCNetworkRequestInterceptor.m in Sources */,
 				6003F59E195388D20070C39A /* WBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				7E65D4EE22D70A6E00461967 /* WCNetworkReponseInterceptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

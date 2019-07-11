@@ -1,0 +1,1 @@
+../../../../../WCNetworkManager/Classes/WCNetworkResponse.h
