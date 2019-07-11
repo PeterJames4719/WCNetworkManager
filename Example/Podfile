@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'WCNetworkManager_Example' do
+  pod 'WCNetworkManager', :path => '../'
+
+  target 'WCNetworkManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
