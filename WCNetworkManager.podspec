@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WCNetworkManager'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A network manager'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ A network manager.
   s.source           = { :git => 'https://github.com/PeterJames4719/WCNetworkManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'WCNetworkManager/Classes/**/*'
   

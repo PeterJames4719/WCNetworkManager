@@ -15,7 +15,7 @@ PODS:
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
   - MJExtension (3.0.17)
-  - WCNetworkManager (1.0.0):
+  - WCNetworkManager (1.0.2):
     - AFNetworking
     - MJExtension
 
@@ -34,7 +34,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
-  WCNetworkManager: b92d944d84fdf82da91ae69b4cf4419cd57b49be
+  WCNetworkManager: 567f931513d51b0de64395fda0f6dd0fc9345dad
 
 PODFILE CHECKSUM: bd47aff736ea06f1bedc372fced60f6e2fb72dbe
 

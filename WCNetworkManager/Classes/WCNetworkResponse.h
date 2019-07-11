@@ -16,14 +16,7 @@ typedef NS_ENUM(NSInteger, WCNetworkResponseError) {
     kNetworkResponseErrorCanceled,          // 取消
     kNetworkResponseErrorNoData,            // 无数据
     kNetworkResponseErrorNoMoreData,        // 无更多数据
-    kNetworkResponseError,                  // 通用服务器错误
-    
-//    // 业务
-//    kNetworkResponseErrorAuthorize = 4001,             // 认证失败
-//    kNetworkResponseErrorAuthorize_bkb = 9995,          // 认证失败
-//    kNetworkResponseErrorCircleAlreadyJoined = 60001,   // 已经加入过社群
-//    kNetworkResponseErrorTopicDeleted = 8996,           // 主题已删除
-//    kNetworkResponseErrorNoDataServer = 9996,           // 无数据
+    kNetworkResponseError                   // 通用服务器错误
 };
 
 @interface WCNetworkResponse : NSObject

@@ -7,7 +7,7 @@
 //
 
 #import "WCNetworkManager.h"
-#import "AFHTTPSessionManager.h"
+#import <AFNetworking/AFHTTPSessionManager.h>
 #import "MJExtension.h"
 
 Class<WCNetworkRequestInterceptorProtocol> _requestInterceptor;

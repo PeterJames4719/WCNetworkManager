@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFURLRequestSerialization.h"
+#import <AFNetworking/AFHTTPSessionManager.h>
 #import "WCNetworkResponse.h"
 #import "WCNetworkRequestInterceptorProtocol.h"
 
