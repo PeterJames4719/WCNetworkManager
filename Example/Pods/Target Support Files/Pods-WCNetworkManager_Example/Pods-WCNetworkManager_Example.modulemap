@@ -1,6 +1,0 @@
-framework module Pods_WCNetworkManager_Example {
-  umbrella header "Pods-WCNetworkManager_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -7,11 +7,15 @@
 //
 
 #import "WBAppDelegate.h"
+#import "LKADURLProtocol.h"
+#import "TJCMHybridNSURLProtocol.h"
 
 @implementation WBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NSURLProtocol registerClass:[TJCMHybridNSURLProtocol class]];
+
     // Override point for customization after application launch.
     return YES;
 }

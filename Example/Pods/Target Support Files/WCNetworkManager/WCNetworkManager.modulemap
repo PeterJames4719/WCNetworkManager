@@ -1,6 +1,0 @@
-framework module WCNetworkManager {
-  umbrella header "WCNetworkManager-umbrella.h"
-
-  export *
-  module * { export * }
-}

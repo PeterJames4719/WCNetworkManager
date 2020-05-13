@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7E65D4ED22D70A6E00461967 /* WCNetworkRequestInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E65D4E922D70A6D00461967 /* WCNetworkRequestInterceptor.m */; };
 		7E65D4EE22D70A6E00461967 /* WCNetworkReponseInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E65D4EB22D70A6E00461967 /* WCNetworkReponseInterceptor.m */; };
+		7E96E81D22DD6FB3009299C9 /* LKADURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E96E81B22DD6FB2009299C9 /* LKADURLProtocol.m */; };
+		7E96E82022DD7112009299C9 /* TJCMHybridNSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E96E81F22DD7111009299C9 /* TJCMHybridNSURLProtocol.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F345F23393747563ABBCCF9F /* libPods-WCNetworkManager_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5634871B2948D586E367DD08 /* libPods-WCNetworkManager_Example.a */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,10 @@
 		7E65D4EA22D70A6E00461967 /* WCNetworkRequestInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNetworkRequestInterceptor.h; sourceTree = "<group>"; };
 		7E65D4EB22D70A6E00461967 /* WCNetworkReponseInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNetworkReponseInterceptor.m; sourceTree = "<group>"; };
 		7E65D4EC22D70A6E00461967 /* WCNetworkReponseInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNetworkReponseInterceptor.h; sourceTree = "<group>"; };
+		7E96E81B22DD6FB2009299C9 /* LKADURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKADURLProtocol.m; sourceTree = "<group>"; };
+		7E96E81C22DD6FB2009299C9 /* LKADURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKADURLProtocol.h; sourceTree = "<group>"; };
+		7E96E81E22DD7111009299C9 /* TJCMHybridNSURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJCMHybridNSURLProtocol.h; sourceTree = "<group>"; };
+		7E96E81F22DD7111009299C9 /* TJCMHybridNSURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJCMHybridNSURLProtocol.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F80682FF85DEB31802BD95B /* Pods-WCNetworkManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCNetworkManager_Example.release.xcconfig"; path = "Target Support Files/Pods-WCNetworkManager_Example/Pods-WCNetworkManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A1794266CD9094E20D323296 /* WCNetworkManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WCNetworkManager.podspec; path = ../WCNetworkManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -138,6 +144,10 @@
 		6003F593195388D20070C39A /* Example for WCNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				7E96E81C22DD6FB2009299C9 /* LKADURLProtocol.h */,
+				7E96E81B22DD6FB2009299C9 /* LKADURLProtocol.m */,
+				7E96E81E22DD7111009299C9 /* TJCMHybridNSURLProtocol.h */,
+				7E96E81F22DD7111009299C9 /* TJCMHybridNSURLProtocol.m */,
 				6003F59C195388D20070C39A /* WBAppDelegate.h */,
 				6003F59D195388D20070C39A /* WBAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -355,11 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E96E82022DD7112009299C9 /* TJCMHybridNSURLProtocol.m in Sources */,
 				7E65D4ED22D70A6E00461967 /* WCNetworkRequestInterceptor.m in Sources */,
 				6003F59E195388D20070C39A /* WBAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WBViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				7E65D4EE22D70A6E00461967 /* WCNetworkReponseInterceptor.m in Sources */,
+				7E96E81D22DD6FB3009299C9 /* LKADURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
