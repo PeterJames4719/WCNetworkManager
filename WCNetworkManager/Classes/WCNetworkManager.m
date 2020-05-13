@@ -228,7 +228,7 @@ Class<WCNetworkResponseInterceptorProtocol> _responseInterceptor;
             }
         }];
     } else {
-        dataTask = [self.afManager dataTaskWithRequest:urlRequest completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        dataTask = [self.afManager dataTaskWithRequest:urlRequest uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
             if (error) {
                 if (failureBlock) {
                     failureBlock(dataTask, error);
